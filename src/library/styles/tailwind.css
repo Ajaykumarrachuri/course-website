@@ -1,6 +1,6 @@
-
 :root {
-  --color-primary: #fff0e5;
+  --color-background-primary: #fff0e5;
+  --color-border-primary: #10162f;
 }
 
 @tailwind base;
@@ -8,8 +8,8 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: 'Apercu';
-        src: local('Apercu'), url(./fonts/Apercu-Regular.ttf) format('ttf');
-      }
+  @font-face {
+    font-family: "Apercu";
+    src: local("Apercu"), url(./fonts/Apercu-Regular.ttf) format("ttf");
+  }
 }

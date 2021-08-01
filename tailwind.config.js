@@ -11,10 +11,15 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1440px',
     },
-    colors: {
-      primary: 'var(--color-primary)',
-    },
     extend: {
+      colors: {
+        background: {
+          primary: 'var(--color-background-primary)',
+        },
+        border: {
+          primary: 'var(--color-border-primary)',
+        }
+      },
       fontFamily: {
         'sans': ['Apercu']
       }
