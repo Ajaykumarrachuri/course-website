@@ -11,6 +11,15 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1440px',
     },
+    fontSize: {
+      sm: ['14px', '20px'],
+      base: ['16px', '24px'],
+      lg: ['20px', '28px'],
+      xl: ['24px', '32px'],
+    },
+    fontFamily: {
+      'sans': ['Apercu']
+    },
     extend: {
       colors: {
         background: {
@@ -18,11 +27,11 @@ module.exports = {
         },
         border: {
           primary: 'var(--color-border-primary)',
+        },
+        text: {
+          hover: 'var(--color-text-hover)',
         }
       },
-      fontFamily: {
-        'sans': ['Apercu']
-      }
     },
   },
   variants: {

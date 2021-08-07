@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@reach/menu-button": "^0.16.1",
     "classnames": "^2.2.6",
     "next": "latest",
     "prop-types": "^15.7.2",
