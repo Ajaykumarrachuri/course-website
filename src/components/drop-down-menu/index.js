@@ -34,7 +34,7 @@ const DropDownMenu = (props) => {
         <div id={id} className={className} {...compProps}>
             <Menu className='relative'>
                 {({ isExpanded }) => (
-                    <React.Fragment>
+                    <>
                         <MenuButton className='flex items-center'>
                             <span className={classnames('hover:text-text-hover px-1',
                                 { 'font-bold': isExpanded })}>
@@ -54,7 +54,7 @@ const DropDownMenu = (props) => {
                                 })}
                             </MenuItems>
                         </MenuPopover>
-                    </React.Fragment>
+                    </>
                 )}
             </Menu>
         </div >
