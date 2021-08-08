@@ -43,13 +43,13 @@ const DropDownMenu = (props) => {
                             <span aria-hidden>{getToggleSvg(isExpanded)}</span>
                         </MenuButton>
                         <MenuPopover className={classnames('absolute z-50 px-6 pt-6 pb-2 bg-white border border-solid border-border-primary', {
-                            'hidden': !isExpanded,
-                            'block': isExpanded
+                            'animate-rollout': !isExpanded,
+                            'animate-rollin': isExpanded
                         })}>
                             <MenuItems>
-                                {menuList.map((value) => {
+                                {menuList.map((value, index) => {
                                     return (
-                                        <MenuItem className='cursor-pointer pb-4 hover:text-text-hover' onSelect={value.onSelect}>{value.label}</MenuItem>
+                                        <MenuItem key={index} className='cursor-pointer pb-4 hover:text-text-hover' onSelect={value.onSelect}>{value.label}</MenuItem>
                                     )
                                 })}
                             </MenuItems>

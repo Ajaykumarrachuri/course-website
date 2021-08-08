@@ -32,6 +32,20 @@ module.exports = {
           hover: 'var(--color-text-hover)',
         }
       },
+      animation: {
+        rollin: 'rollin 0.5s ease',
+        rollout: 'rollout 0.5s ease'
+      },
+      keyframes: {
+        rollin: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 100, transform: 'rotate(360deg)' }
+        },
+        rollout: {
+          '0%': { opacity: 100, transform: 'rotate(-360deg)' },
+          '100%': { opacity: 0 }
+        }
+      },
     },
   },
   variants: {
